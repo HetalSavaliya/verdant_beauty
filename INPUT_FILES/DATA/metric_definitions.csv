@@ -1,0 +1,5 @@
+metric_id,label,definition,format
+net_sales,Net Sales,Sum net_amount_inr for payment_status Paid,INR
+orders,Orders,Count transactions with payment_status Paid,integer
+average_order_value,Average Order Value,Net Sales divided by Orders,INR
+refunds,Refunds,Count records with payment_status Refunded,integer

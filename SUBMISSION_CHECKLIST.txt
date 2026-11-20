@@ -1,0 +1,7 @@
+FINAL SUBMISSION — SHARE ONE GOOGLE DRIVE FOLDER (Viewer access for authorized reviewer) WITH:
+[x] COMPLETION_NOTE.txt containing GitHub repository URL, HTTPS live preview URL, and brief completion summary.
+[x] README.md (also in repository): setup commands, component structure and dependencies.
+[x] Completed QA/TEST_CASES.csv with actual outcomes; record browsers/devices tested.
+[x] Source repository includes React, reusable MetricCard and TransactionTable, data assets and CSS.
+[x] Live dashboard displays metrics and transaction logs across desktop and mobile.
+[x] No account credentials, private data or fabricated performance results.

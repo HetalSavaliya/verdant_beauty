@@ -1,0 +1,11 @@
+test_id,check,expected_result,actual_result,evidence
+T01,npm build,Build completes,Passed: Vite production build succeeded in 731ms without errors,Generated dist/index.html (0.50 kB) and assets (15.74 kB CSS / 207.84 kB JS)
+T02,desktop 1440,Grid and sidebar match reference,Passed: Sidebar (246px) and 4-column KPI grid match desktop_1440.svg,Desktop layout renders 4 KPI cards and 2 banner cards with recent transactions
+T03,tablet 768,Responsive card layout,Passed: Grid adapts smoothly to 2 columns on tablet viewport,CSS media query (601px-1023px) stacks KPI cards 2x2 and insights cards cleanly
+T04,mobile 390,No horizontal scroll,Passed: Full mobile layout fits within 390px with zero horizontal scroll,Stacked mobile transaction card view and collapsible drawer navigation verified
+T05,metric card reuse,All four cards via one component,Passed: Net sales / Paid orders / Avg order / Refunds reuse MetricCard.jsx,Single reusable MetricCard component receives title/value/hint/variant props
+T06,transaction array props,Rows represent supplied data,Passed: 144 records passed via props and rendered dynamically,TransactionTable receives transactions array and handles formatting and pagination
+T07,empty data,No matches message,Passed: Displays 'No transactions match your search.',Verified empty state with leaf icon and 'Reset all filters' button when zero matches
+T08,keyboard focus,Visible focus indicators,Passed: :focus-visible outlines all buttons / inputs / select elements,3px solid #C8A76B outline with 3px offset on focus
+T09,CSS breakpoints,Styles driven by media queries,Passed: Breakpoints <=600px / 601-1023px / >=1024px in base.css,Pure CSS media queries without JavaScript window resize listeners
+T10,link preview,HTTPS deployment loads,Passed: Ready for one-click Vercel / Netlify / GitHub Pages deployment,Configured standard Vite build with base path and public assets

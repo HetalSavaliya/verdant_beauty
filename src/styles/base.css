@@ -1,0 +1,1189 @@
+/* ==========================================================================
+   VERDANT BEAUTY COMMERCE DASHBOARD
+   Design System & Responsive Stylesheet
+   Palette: Deep Forest (#244E3B), Sage (#DCE9D7), Warm Paper (#F8F7F0), 
+            Ink (#203329), Muted Gold (#C8A76B), Active Forest (#426B52)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. CSS Custom Properties / Design Tokens
+   -------------------------------------------------------------------------- */
+:root {
+  --color-forest: #244E3B;
+  --color-forest-active: #426B52;
+  --color-forest-dark: #193829;
+  --color-sage: #DCE9D7;
+  --color-sage-light: #EEF4EB;
+  --color-sage-dark: #8FB39A;
+  --color-warm-paper: #F8F7F0;
+  --color-white: #FFFFFF;
+  --color-ink: #203329;
+  --color-text-secondary: #657569;
+  --color-text-subtle: #6B7A6E;
+  --color-text-muted: #8D9B90;
+  --color-gold: #C8A76B;
+  --color-border: #E5E9E2;
+  --color-table-header: #F1F4EF;
+  --color-row-border: #EFF1EA;
+
+  /* Status accents */
+  --status-paid-bg: #DCE9D7;
+  --status-paid-text: #1E4633;
+  --status-refund-bg: #F4DDD5;
+  --status-refund-text: #963523;
+  --status-pending-bg: #FEF3D6;
+  --status-pending-text: #825F05;
+
+  /* Sizing & Transitions */
+  --sidebar-width: 246px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-pill: 9999px;
+  --transition-fast: 150ms ease-in-out;
+  --shadow-card: 0 2px 8px rgba(32, 51, 41, 0.04);
+}
+
+/* --------------------------------------------------------------------------
+   2. Reset & Global Typography
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-warm-paper);
+  color: var(--color-ink);
+  font-family: Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* Accessibility Focus States */
+:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+/* Screen reader only utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* --------------------------------------------------------------------------
+   3. Main Dashboard Layout (Grid / Flexbox)
+   -------------------------------------------------------------------------- */
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.dashboard-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.dashboard-main {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 36px 32px 64px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* --------------------------------------------------------------------------
+   4. Sidebar Navigation
+   -------------------------------------------------------------------------- */
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: var(--color-forest);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  padding: 32px 16px 24px 16px;
+  z-index: 50;
+}
+
+.sidebar__brand {
+  padding: 0 16px 28px 16px;
+}
+
+.sidebar__brand-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-logo-text {
+  font-size: 27px;
+  font-weight: 700;
+  color: var(--color-white);
+  letter-spacing: -0.5px;
+}
+
+.brand-subtitle {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #B9D1BD;
+  margin-top: 4px;
+}
+
+.sidebar__close-btn {
+  background: transparent;
+  border: none;
+  color: var(--color-white);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.sidebar__nav {
+  flex: 1;
+  margin-top: 8px;
+}
+
+.sidebar__menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar__menu-item {
+  width: 100%;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 18px;
+  background: transparent;
+  border: none;
+  border-radius: 11px;
+  color: #D4E6D3;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.sidebar__link:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--color-white);
+}
+
+.sidebar__link--active {
+  background-color: var(--color-forest-active);
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.sidebar__link-icon {
+  font-size: 16px;
+}
+
+.sidebar__footer {
+  padding: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.store-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-pill);
+}
+
+.store-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #6BE898;
+}
+
+.store-name {
+  font-size: 12px;
+  color: #DCE9D7;
+  font-weight: 500;
+}
+
+.sidebar__version {
+  font-size: 11px;
+  color: #8FB39A;
+}
+
+.sidebar-backdrop {
+  display: none;
+}
+
+/* --------------------------------------------------------------------------
+   5. Mobile Header (Hidden on desktop/tablet via CSS)
+   -------------------------------------------------------------------------- */
+.mobile-header {
+  display: none;
+  background-color: var(--color-forest);
+  color: var(--color-white);
+  height: 64px;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.mobile-header__brand {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.mobile-header__menu-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--color-white);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+}
+
+/* --------------------------------------------------------------------------
+   6. Dashboard Topbar
+   -------------------------------------------------------------------------- */
+.dashboard-topbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dashboard-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-ink);
+  line-height: 1.2;
+}
+
+.dashboard-subtitle {
+  font-size: 15px;
+  color: var(--color-text-subtle);
+  margin-top: 6px;
+}
+
+.date-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-ink);
+  box-shadow: var(--shadow-card);
+  user-select: none;
+}
+
+.date-badge__arrow {
+  font-size: 10px;
+  color: var(--color-text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   7. Reusable MetricCard Component
+   -------------------------------------------------------------------------- */
+.metrics-section {
+  width: 100%;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.metric-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 22px 24px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(32, 51, 41, 0.08);
+}
+
+.metric-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.metric-card__title {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.metric-card__badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.metric-card__badge--sage {
+  background-color: var(--color-sage);
+}
+
+.metric-card__badge--refund {
+  background-color: var(--status-refund-bg);
+}
+
+.metric-card__value {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-ink);
+  line-height: 1.15;
+  margin-bottom: 6px;
+}
+
+.metric-card__hint {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.metric-card__subtext {
+  font-size: 12px;
+  color: var(--color-forest);
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   8. Banner Cards (Botanical Brand Banner & Quick Insights)
+   -------------------------------------------------------------------------- */
+.banner-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.banner-card {
+  border-radius: var(--radius-lg);
+  padding: 26px 28px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.banner-card--botanical {
+  background-color: var(--color-sage);
+  color: var(--color-ink);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-card--insights {
+  background-color: var(--color-white);
+  color: var(--color-ink);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.banner-card__content {
+  position: relative;
+  z-index: 2;
+  max-width: 380px;
+}
+
+.banner-card__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-ink);
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.banner-card__subtitle {
+  font-size: 14px;
+  color: var(--color-ink);
+  opacity: 0.9;
+  margin-bottom: 14px;
+}
+
+.banner-card__desc {
+  font-size: 14px;
+  color: var(--color-text-subtle);
+  line-height: 1.45;
+  margin-bottom: 4px;
+}
+
+.banner-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.organic-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: rgba(36, 78, 59, 0.1);
+  color: var(--color-forest);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.banner-card__graphic {
+  position: absolute;
+  right: -10px;
+  bottom: -15px;
+  width: 170px;
+  height: 150px;
+  pointer-events: none;
+}
+
+.botanical-leaf-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.insights-metrics-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--color-border);
+}
+
+.insight-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.insight-stat__label {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.insight-stat__value {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-forest);
+  margin-top: 2px;
+}
+
+.insight-stat__divider {
+  width: 1px;
+  height: 28px;
+  background-color: var(--color-border);
+}
+
+/* --------------------------------------------------------------------------
+   9. Filter Bar Controls
+   -------------------------------------------------------------------------- */
+.filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.filter-bar__search-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.search-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 14px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 38px 12px 38px;
+  background-color: var(--color-white);
+  border: 1px solid #9CB09C;
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--color-ink);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.search-input:focus {
+  border-color: var(--color-forest);
+  box-shadow: 0 0 0 3px rgba(36, 78, 59, 0.15);
+}
+
+.search-clear-btn {
+  position: absolute;
+  right: 12px;
+  background: transparent;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.filter-bar__selects-group {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 140px;
+  flex: 1;
+}
+
+.filter-select {
+  padding: 10px 14px;
+  background-color: var(--color-white);
+  border: 1px solid #9CB09C;
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--color-ink);
+  cursor: pointer;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.btn--reset {
+  padding: 10px 16px;
+  background-color: transparent;
+  border: 1px dashed var(--color-text-muted);
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  height: 40px;
+}
+
+.btn--reset:hover {
+  background-color: rgba(36, 78, 59, 0.05);
+  color: var(--color-forest);
+  border-color: var(--color-forest);
+}
+
+.filter-bar__summary {
+  display: flex;
+  align-items: center;
+}
+
+.summary-badge {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   10. Transactions Section & Table
+   -------------------------------------------------------------------------- */
+.transactions-section {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 26px 28px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.transactions-section__header {
+  margin-bottom: 20px;
+}
+
+.transactions-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: var(--radius-sm);
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 13px;
+}
+
+.transaction-table thead tr {
+  background-color: var(--color-table-header);
+  border-radius: 7px;
+}
+
+.transaction-table th {
+  padding: 10px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #64766C;
+  white-space: nowrap;
+}
+
+.table-col-right {
+  text-align: right;
+}
+
+.table-sort-btn {
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  color: #64766C;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.table-sort-btn:hover {
+  color: var(--color-ink);
+}
+
+.transaction-row {
+  border-bottom: 1px solid var(--color-row-border);
+  transition: background-color var(--transition-fast);
+}
+
+.transaction-row:hover {
+  background-color: #FAFBF9;
+}
+
+.transaction-table td {
+  padding: 14px;
+  vertical-align: middle;
+}
+
+.cell-id {
+  font-weight: 600;
+  color: var(--color-ink);
+  white-space: nowrap;
+}
+
+.id-code {
+  display: block;
+}
+
+.customer-sub {
+  display: block;
+  font-size: 11px;
+  color: var(--color-text-muted);
+  font-weight: normal;
+}
+
+.cell-date {
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.cell-product {
+  max-width: 240px;
+}
+
+.product-title {
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.product-meta {
+  display: flex;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.category-tag {
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.qty-tag {
+  font-size: 11px;
+  color: var(--color-forest);
+  font-weight: 500;
+}
+
+.cell-channel {
+  white-space: nowrap;
+}
+
+.channel-badge {
+  display: block;
+  color: var(--color-ink);
+  font-weight: 500;
+}
+
+.region-sub {
+  display: block;
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.cell-amount {
+  font-weight: 700;
+  color: var(--color-ink);
+  white-space: nowrap;
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.status-badge--paid {
+  background-color: var(--status-paid-bg);
+  color: var(--status-paid-text);
+}
+
+.status-badge--refunded {
+  background-color: var(--status-refund-bg);
+  color: var(--status-refund-text);
+}
+
+.status-badge--pending {
+  background-color: var(--status-pending-bg);
+  color: var(--status-pending-text);
+}
+
+/* Fulfillment Pills */
+.fulfillment-pill {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  background-color: #EFEFE9;
+}
+
+.fulfillment-pill--shipped {
+  background-color: #E2ECF7;
+  color: #1A4971;
+}
+
+.fulfillment-pill--delivered {
+  background-color: #E2F2E4;
+  color: #1C5E28;
+}
+
+.fulfillment-pill--processing {
+  background-color: #FFF2D6;
+  color: #795700;
+}
+
+.fulfillment-pill--cancelled {
+  background-color: #F8E2DF;
+  color: #8C2517;
+}
+
+/* Mobile Stacked Card View: Hidden by default on desktop/tablet */
+.mobile-transaction-list {
+  display: none;
+}
+
+/* Table Empty and Loading States */
+.table-state-box {
+  padding: 48px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.empty-icon {
+  font-size: 36px;
+}
+
+.empty-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.empty-hint {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  max-width: 340px;
+}
+
+.btn--outline {
+  margin-top: 6px;
+  padding: 8px 18px;
+  background: transparent;
+  border: 1px solid var(--color-forest);
+  color: var(--color-forest);
+  font-size: 13px;
+}
+
+.btn--outline:hover {
+  background-color: var(--color-forest);
+  color: var(--color-white);
+}
+
+/* Pagination */
+.table-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-row-border);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.pagination-info {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.pagination-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn--pagination {
+  padding: 6px 14px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  color: var(--color-ink);
+  font-size: 13px;
+}
+
+.btn--pagination:hover:not(:disabled) {
+  background-color: var(--color-table-header);
+  border-color: #9CB09C;
+}
+
+.btn--pagination:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.pagination-current {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   11. Responsive Media Queries (CSS Only, No JS resize listeners)
+   -------------------------------------------------------------------------- */
+
+/* TABLET BREAKPOINT (601px - 1023px) */
+@media (min-width: 601px) and (max-width: 1023px) {
+  .sidebar {
+    width: 200px;
+    padding: 24px 12px;
+  }
+
+  .sidebar__brand {
+    padding: 0 10px 20px 10px;
+  }
+
+  .brand-logo-text {
+    font-size: 22px;
+  }
+
+  .dashboard-main {
+    padding: 24px 20px 48px 20px;
+    gap: 22px;
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .col-fulfillment {
+    display: none;
+  }
+}
+
+/* MOBILE BREAKPOINT (<= 600px) */
+@media (max-width: 600px) {
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  /* Display mobile top header bar */
+  .mobile-header {
+    display: flex;
+  }
+
+  /* Sidebar becomes an off-canvas drawer */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 280px;
+    transform: translateX(-100%);
+    transition: transform 250ms ease-in-out;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+  }
+
+  .sidebar--open {
+    transform: translateX(0);
+  }
+
+  .sidebar-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 90;
+  }
+
+  .dashboard-main {
+    padding: 20px 16px 40px 16px;
+    gap: 20px;
+  }
+
+  .dashboard-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .dashboard-title {
+    font-size: 24px;
+  }
+
+  .dashboard-subtitle {
+    font-size: 13px;
+  }
+
+  /* KPI cards: 2x2 grid on mobile matching mobile_390.svg */
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .metric-card {
+    padding: 16px 14px;
+    border-radius: 16px;
+  }
+
+  .metric-card__title {
+    font-size: 13px;
+  }
+
+  .metric-card__value {
+    font-size: 24px;
+  }
+
+  .metric-card__hint {
+    display: none;
+  }
+
+  /* Banner cards stack vertically */
+  .banner-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .banner-card {
+    padding: 20px 18px;
+    border-radius: 16px;
+  }
+
+  .banner-card__title {
+    font-size: 18px;
+  }
+
+  .banner-card__graphic {
+    display: none;
+  }
+
+  .insights-metrics-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .insight-stat__divider {
+    display: none;
+  }
+
+  /* Filters on mobile */
+  .filter-bar__selects-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-field {
+    width: 100%;
+  }
+
+  .transactions-section {
+    padding: 20px 16px;
+    border-radius: 16px;
+  }
+
+  /* HIDE desktop table entirely on mobile to prevent horizontal overflow */
+  .table-container {
+    display: none;
+  }
+
+  /* SHOW mobile stacked card list */
+  .mobile-transaction-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .mobile-transaction-card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  }
+
+  .mobile-card-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .mobile-card-id {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-ink);
+  }
+
+  .mobile-card-amount {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-ink);
+  }
+
+  .mobile-card-product {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 220px;
+  }
+
+  .mobile-card-row--sub {
+    font-size: 11px;
+    color: var(--color-text-muted);
+    padding-top: 4px;
+    border-top: 1px dashed var(--color-border);
+  }
+
+  .table-pagination {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+}

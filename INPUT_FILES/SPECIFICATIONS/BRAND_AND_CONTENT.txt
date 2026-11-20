@@ -1,0 +1,18 @@
+GROWTH ECOMMERCE STORE GLOBAL | VERDANT BEAUTY
+Dashboard design system
+Brand: Verdant Beauty, an organic cosmetics storefront.
+Audience: merchandising and operations staff. The supplied transaction records are project source data, not live sales analytics.
+Palette: deep forest #244E3B, sage #DCE9D7, warm paper #F8F7F0, ink #203329, muted gold #C8A76B.
+Typography: Arial / system sans-serif. 2-space code indentation.
+Desktop reference: DESIGN_REFERENCES/desktop_1440.png (1440 x 900).
+Mobile reference: DESIGN_REFERENCES/mobile_390.png (390 x 1050).
+Main headline: Commerce overview
+Subheading: Track your beauty store performance at a glance
+Sidebar links: Overview / Transactions / Products / Customers / Settings (only Overview functional is required).
+Cards: Net sales; Paid orders; Avg. order; Refunds, calculated from DATA/metric_definitions.csv.
+Table columns: transaction_id, order_date, product_name, channel, net_amount_inr, payment_status, fulfillment_status.
+Mobile table may use stacked rows; show ID, product, amount, status without horizontal overflow.
+Breakpoints: <=600px mobile stacked cards, 601–1023px tablet, >=1024px desktop 4-card grid/sidebar.
+Empty message: No transactions match your search.
+Loading message: Loading transactions...
+All labels and controls accessible via keyboard; preserve readable contrast and visible focus.

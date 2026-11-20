@@ -1,0 +1,25 @@
+{
+  "payment_status": [
+    "All",
+    "Paid",
+    "Pending",
+    "Refunded"
+  ],
+  "channels": [
+    "All",
+    "Website",
+    "Marketplace",
+    "Mobile App"
+  ],
+  "regions": [
+    "All",
+    "North",
+    "South",
+    "West",
+    "East"
+  ],
+  "defaultSort": {
+    "field": "order_date",
+    "direction": "desc"
+  }
+}

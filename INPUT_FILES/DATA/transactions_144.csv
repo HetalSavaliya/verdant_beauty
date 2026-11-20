@@ -1,0 +1,145 @@
+transaction_id,order_date,customer_ref,product_sku,product_name,category,channel,region,quantity,unit_price_inr,discount_inr,gross_amount_inr,net_amount_inr,payment_status,fulfillment_status
+TXN-00001,2026-09-04,CUST-0014,RS-MST-03,Rosewater Mist,Skincare,Marketplace,South,1,399,0,399,399,Paid,Processing
+TXN-00002,2026-09-07,CUST-0027,AL-GEL-02,Aloe Repair Gel,Skincare,Mobile App,West,1,449,0,449,449,Paid,Shipped
+TXN-00003,2026-09-10,CUST-0040,VC-SER-01,Vitamin C Brightening Serum,Serums,Website,East,2,799,0,1598,1598,Refunded,Delivered
+TXN-00004,2026-09-13,CUST-0053,SH-SPF-08,Daily Mineral SPF,Skincare,Marketplace,North,1,899,0,899,899,Pending,Processing
+TXN-00005,2026-09-16,CUST-0066,HM-MSK-07,Herbal Clay Mask,Masks,Mobile App,South,1,699,100,699,599,Paid,Shipped
+TXN-00006,2026-09-19,CUST-0079,OC-CLN-06,Oat Cream Cleanser,Cleansers,Website,West,2,599,0,1198,1198,Paid,Delivered
+TXN-00007,2026-09-22,CUST-0001,NT-OIL-05,Night Renewal Oil,Serums,Marketplace,East,1,1099,0,1099,1099,Paid,Processing
+TXN-00008,2026-09-25,CUST-0014,TB-LIP-04,Tinted Lip Balm,Makeup,Mobile App,North,1,349,0,349,349,Refunded,Shipped
+TXN-00009,2026-09-28,CUST-0027,RS-MST-03,Rosewater Mist,Skincare,Website,South,2,399,0,798,798,Pending,Delivered
+TXN-00010,2026-10-01,CUST-0040,AL-GEL-02,Aloe Repair Gel,Skincare,Marketplace,West,1,449,100,449,349,Paid,Processing
+TXN-00011,2026-10-04,CUST-0053,VC-SER-01,Vitamin C Brightening Serum,Serums,Mobile App,East,1,799,0,799,799,Paid,Shipped
+TXN-00012,2026-10-07,CUST-0066,SH-SPF-08,Daily Mineral SPF,Skincare,Website,North,2,899,0,1798,1798,Paid,Delivered
+TXN-00013,2026-10-10,CUST-0079,HM-MSK-07,Herbal Clay Mask,Masks,Marketplace,South,1,699,0,699,699,Refunded,Processing
+TXN-00014,2026-10-13,CUST-0001,OC-CLN-06,Oat Cream Cleanser,Cleansers,Mobile App,West,1,599,0,599,599,Pending,Shipped
+TXN-00015,2026-10-16,CUST-0014,NT-OIL-05,Night Renewal Oil,Serums,Website,East,2,1099,100,2198,2098,Paid,Delivered
+TXN-00016,2026-10-19,CUST-0027,TB-LIP-04,Tinted Lip Balm,Makeup,Marketplace,North,1,349,0,349,349,Paid,Processing
+TXN-00017,2026-10-22,CUST-0040,RS-MST-03,Rosewater Mist,Skincare,Mobile App,South,1,399,0,399,399,Paid,Shipped
+TXN-00018,2026-10-25,CUST-0053,AL-GEL-02,Aloe Repair Gel,Skincare,Website,West,2,449,0,898,898,Refunded,Delivered
+TXN-00019,2026-10-28,CUST-0066,VC-SER-01,Vitamin C Brightening Serum,Serums,Marketplace,East,1,799,0,799,799,Pending,Processing
+TXN-00020,2026-10-31,CUST-0079,SH-SPF-08,Daily Mineral SPF,Skincare,Mobile App,North,1,899,100,899,799,Paid,Shipped
+TXN-00021,2026-11-03,CUST-0001,HM-MSK-07,Herbal Clay Mask,Masks,Website,South,2,699,0,1398,1398,Paid,Delivered
+TXN-00022,2026-11-06,CUST-0014,OC-CLN-06,Oat Cream Cleanser,Cleansers,Marketplace,West,1,599,0,599,599,Paid,Processing
+TXN-00023,2026-11-09,CUST-0027,NT-OIL-05,Night Renewal Oil,Serums,Mobile App,East,1,1099,0,1099,1099,Refunded,Shipped
+TXN-00024,2026-11-12,CUST-0040,TB-LIP-04,Tinted Lip Balm,Makeup,Website,North,2,349,0,698,698,Pending,Delivered
+TXN-00025,2026-09-02,CUST-0053,RS-MST-03,Rosewater Mist,Skincare,Marketplace,South,1,399,100,399,299,Paid,Processing
+TXN-00026,2026-09-05,CUST-0066,AL-GEL-02,Aloe Repair Gel,Skincare,Mobile App,West,1,449,0,449,449,Paid,Shipped
+TXN-00027,2026-09-08,CUST-0079,VC-SER-01,Vitamin C Brightening Serum,Serums,Website,East,2,799,0,1598,1598,Paid,Delivered
+TXN-00028,2026-09-11,CUST-0001,SH-SPF-08,Daily Mineral SPF,Skincare,Marketplace,North,1,899,0,899,899,Refunded,Processing
+TXN-00029,2026-09-14,CUST-0014,HM-MSK-07,Herbal Clay Mask,Masks,Mobile App,South,1,699,0,699,699,Pending,Shipped
+TXN-00030,2026-09-17,CUST-0027,OC-CLN-06,Oat Cream Cleanser,Cleansers,Website,West,2,599,100,1198,1098,Paid,Delivered
+TXN-00031,2026-09-20,CUST-0040,NT-OIL-05,Night Renewal Oil,Serums,Marketplace,East,1,1099,0,1099,1099,Paid,Processing
+TXN-00032,2026-09-23,CUST-0053,TB-LIP-04,Tinted Lip Balm,Makeup,Mobile App,North,1,349,0,349,349,Paid,Shipped
+TXN-00033,2026-09-26,CUST-0066,RS-MST-03,Rosewater Mist,Skincare,Website,South,2,399,0,798,798,Refunded,Delivered
+TXN-00034,2026-09-29,CUST-0079,AL-GEL-02,Aloe Repair Gel,Skincare,Marketplace,West,1,449,0,449,449,Pending,Processing
+TXN-00035,2026-10-02,CUST-0001,VC-SER-01,Vitamin C Brightening Serum,Serums,Mobile App,East,1,799,100,799,699,Paid,Shipped
+TXN-00036,2026-10-05,CUST-0014,SH-SPF-08,Daily Mineral SPF,Skincare,Website,North,2,899,0,1798,1798,Paid,Delivered
+TXN-00037,2026-10-08,CUST-0027,HM-MSK-07,Herbal Clay Mask,Masks,Marketplace,South,1,699,0,699,699,Paid,Processing
+TXN-00038,2026-10-11,CUST-0040,OC-CLN-06,Oat Cream Cleanser,Cleansers,Mobile App,West,1,599,0,599,599,Refunded,Shipped
+TXN-00039,2026-10-14,CUST-0053,NT-OIL-05,Night Renewal Oil,Serums,Website,East,2,1099,0,2198,2198,Pending,Delivered
+TXN-00040,2026-10-17,CUST-0066,TB-LIP-04,Tinted Lip Balm,Makeup,Marketplace,North,1,349,100,349,249,Paid,Processing
+TXN-00041,2026-10-20,CUST-0079,RS-MST-03,Rosewater Mist,Skincare,Mobile App,South,1,399,0,399,399,Paid,Shipped
+TXN-00042,2026-10-23,CUST-0001,AL-GEL-02,Aloe Repair Gel,Skincare,Website,West,2,449,0,898,898,Paid,Delivered
+TXN-00043,2026-10-26,CUST-0014,VC-SER-01,Vitamin C Brightening Serum,Serums,Marketplace,East,1,799,0,799,799,Refunded,Processing
+TXN-00044,2026-10-29,CUST-0027,SH-SPF-08,Daily Mineral SPF,Skincare,Mobile App,North,1,899,0,899,899,Pending,Shipped
+TXN-00045,2026-11-01,CUST-0040,HM-MSK-07,Herbal Clay Mask,Masks,Website,South,2,699,100,1398,1298,Paid,Delivered
+TXN-00046,2026-11-04,CUST-0053,OC-CLN-06,Oat Cream Cleanser,Cleansers,Marketplace,West,1,599,0,599,599,Paid,Processing
+TXN-00047,2026-11-07,CUST-0066,NT-OIL-05,Night Renewal Oil,Serums,Mobile App,East,1,1099,0,1099,1099,Paid,Shipped
+TXN-00048,2026-11-10,CUST-0079,TB-LIP-04,Tinted Lip Balm,Makeup,Website,North,2,349,0,698,698,Refunded,Delivered
+TXN-00049,2026-11-13,CUST-0001,RS-MST-03,Rosewater Mist,Skincare,Marketplace,South,1,399,0,399,399,Pending,Processing
+TXN-00050,2026-09-03,CUST-0014,AL-GEL-02,Aloe Repair Gel,Skincare,Mobile App,West,1,449,100,449,349,Paid,Shipped
+TXN-00051,2026-09-06,CUST-0027,VC-SER-01,Vitamin C Brightening Serum,Serums,Website,East,2,799,0,1598,1598,Paid,Delivered
+TXN-00052,2026-09-09,CUST-0040,SH-SPF-08,Daily Mineral SPF,Skincare,Marketplace,North,1,899,0,899,899,Paid,Processing
+TXN-00053,2026-09-12,CUST-0053,HM-MSK-07,Herbal Clay Mask,Masks,Mobile App,South,1,699,0,699,699,Refunded,Shipped
+TXN-00054,2026-09-15,CUST-0066,OC-CLN-06,Oat Cream Cleanser,Cleansers,Website,West,2,599,0,1198,1198,Pending,Delivered
+TXN-00055,2026-09-18,CUST-0079,NT-OIL-05,Night Renewal Oil,Serums,Marketplace,East,1,1099,100,1099,999,Paid,Processing
+TXN-00056,2026-09-21,CUST-0001,TB-LIP-04,Tinted Lip Balm,Makeup,Mobile App,North,1,349,0,349,349,Paid,Shipped
+TXN-00057,2026-09-24,CUST-0014,RS-MST-03,Rosewater Mist,Skincare,Website,South,2,399,0,798,798,Paid,Delivered
+TXN-00058,2026-09-27,CUST-0027,AL-GEL-02,Aloe Repair Gel,Skincare,Marketplace,West,1,449,0,449,449,Refunded,Processing
+TXN-00059,2026-09-30,CUST-0040,VC-SER-01,Vitamin C Brightening Serum,Serums,Mobile App,East,1,799,0,799,799,Pending,Shipped
+TXN-00060,2026-10-03,CUST-0053,SH-SPF-08,Daily Mineral SPF,Skincare,Website,North,2,899,100,1798,1698,Paid,Delivered
+TXN-00061,2026-10-06,CUST-0066,HM-MSK-07,Herbal Clay Mask,Masks,Marketplace,South,1,699,0,699,699,Paid,Processing
+TXN-00062,2026-10-09,CUST-0079,OC-CLN-06,Oat Cream Cleanser,Cleansers,Mobile App,West,1,599,0,599,599,Paid,Shipped
+TXN-00063,2026-10-12,CUST-0001,NT-OIL-05,Night Renewal Oil,Serums,Website,East,2,1099,0,2198,2198,Refunded,Delivered
+TXN-00064,2026-10-15,CUST-0014,TB-LIP-04,Tinted Lip Balm,Makeup,Marketplace,North,1,349,0,349,349,Pending,Processing
+TXN-00065,2026-10-18,CUST-0027,RS-MST-03,Rosewater Mist,Skincare,Mobile App,South,1,399,100,399,299,Paid,Shipped
+TXN-00066,2026-10-21,CUST-0040,AL-GEL-02,Aloe Repair Gel,Skincare,Website,West,2,449,0,898,898,Paid,Delivered
+TXN-00067,2026-10-24,CUST-0053,VC-SER-01,Vitamin C Brightening Serum,Serums,Marketplace,East,1,799,0,799,799,Paid,Processing
+TXN-00068,2026-10-27,CUST-0066,SH-SPF-08,Daily Mineral SPF,Skincare,Mobile App,North,1,899,0,899,899,Refunded,Shipped
+TXN-00069,2026-10-30,CUST-0079,HM-MSK-07,Herbal Clay Mask,Masks,Website,South,2,699,0,1398,1398,Pending,Delivered
+TXN-00070,2026-11-02,CUST-0001,OC-CLN-06,Oat Cream Cleanser,Cleansers,Marketplace,West,1,599,100,599,499,Paid,Processing
+TXN-00071,2026-11-05,CUST-0014,NT-OIL-05,Night Renewal Oil,Serums,Mobile App,East,1,1099,0,1099,1099,Paid,Shipped
+TXN-00072,2026-11-08,CUST-0027,TB-LIP-04,Tinted Lip Balm,Makeup,Website,North,2,349,0,698,698,Paid,Delivered
+TXN-00073,2026-11-11,CUST-0040,RS-MST-03,Rosewater Mist,Skincare,Marketplace,South,1,399,0,399,399,Refunded,Processing
+TXN-00074,2026-09-01,CUST-0053,AL-GEL-02,Aloe Repair Gel,Skincare,Mobile App,West,1,449,0,449,449,Pending,Shipped
+TXN-00075,2026-09-04,CUST-0066,VC-SER-01,Vitamin C Brightening Serum,Serums,Website,East,2,799,100,1598,1498,Paid,Delivered
+TXN-00076,2026-09-07,CUST-0079,SH-SPF-08,Daily Mineral SPF,Skincare,Marketplace,North,1,899,0,899,899,Paid,Processing
+TXN-00077,2026-09-10,CUST-0001,HM-MSK-07,Herbal Clay Mask,Masks,Mobile App,South,1,699,0,699,699,Paid,Shipped
+TXN-00078,2026-09-13,CUST-0014,OC-CLN-06,Oat Cream Cleanser,Cleansers,Website,West,2,599,0,1198,1198,Refunded,Delivered
+TXN-00079,2026-09-16,CUST-0027,NT-OIL-05,Night Renewal Oil,Serums,Marketplace,East,1,1099,0,1099,1099,Pending,Processing
+TXN-00080,2026-09-19,CUST-0040,TB-LIP-04,Tinted Lip Balm,Makeup,Mobile App,North,1,349,100,349,249,Paid,Shipped
+TXN-00081,2026-09-22,CUST-0053,RS-MST-03,Rosewater Mist,Skincare,Website,South,2,399,0,798,798,Paid,Delivered
+TXN-00082,2026-09-25,CUST-0066,AL-GEL-02,Aloe Repair Gel,Skincare,Marketplace,West,1,449,0,449,449,Paid,Processing
+TXN-00083,2026-09-28,CUST-0079,VC-SER-01,Vitamin C Brightening Serum,Serums,Mobile App,East,1,799,0,799,799,Refunded,Shipped
+TXN-00084,2026-10-01,CUST-0001,SH-SPF-08,Daily Mineral SPF,Skincare,Website,North,2,899,0,1798,1798,Pending,Delivered
+TXN-00085,2026-10-04,CUST-0014,HM-MSK-07,Herbal Clay Mask,Masks,Marketplace,South,1,699,100,699,599,Paid,Processing
+TXN-00086,2026-10-07,CUST-0027,OC-CLN-06,Oat Cream Cleanser,Cleansers,Mobile App,West,1,599,0,599,599,Paid,Shipped
+TXN-00087,2026-10-10,CUST-0040,NT-OIL-05,Night Renewal Oil,Serums,Website,East,2,1099,0,2198,2198,Paid,Delivered
+TXN-00088,2026-10-13,CUST-0053,TB-LIP-04,Tinted Lip Balm,Makeup,Marketplace,North,1,349,0,349,349,Refunded,Processing
+TXN-00089,2026-10-16,CUST-0066,RS-MST-03,Rosewater Mist,Skincare,Mobile App,South,1,399,0,399,399,Pending,Shipped
+TXN-00090,2026-10-19,CUST-0079,AL-GEL-02,Aloe Repair Gel,Skincare,Website,West,2,449,100,898,798,Paid,Delivered
+TXN-00091,2026-10-22,CUST-0001,VC-SER-01,Vitamin C Brightening Serum,Serums,Marketplace,East,1,799,0,799,799,Paid,Processing
+TXN-00092,2026-10-25,CUST-0014,SH-SPF-08,Daily Mineral SPF,Skincare,Mobile App,North,1,899,0,899,899,Paid,Shipped
+TXN-00093,2026-10-28,CUST-0027,HM-MSK-07,Herbal Clay Mask,Masks,Website,South,2,699,0,1398,1398,Refunded,Delivered
+TXN-00094,2026-10-31,CUST-0040,OC-CLN-06,Oat Cream Cleanser,Cleansers,Marketplace,West,1,599,0,599,599,Pending,Processing
+TXN-00095,2026-11-03,CUST-0053,NT-OIL-05,Night Renewal Oil,Serums,Mobile App,East,1,1099,100,1099,999,Paid,Shipped
+TXN-00096,2026-11-06,CUST-0066,TB-LIP-04,Tinted Lip Balm,Makeup,Website,North,2,349,0,698,698,Paid,Delivered
+TXN-00097,2026-11-09,CUST-0079,RS-MST-03,Rosewater Mist,Skincare,Marketplace,South,1,399,0,399,399,Paid,Processing
+TXN-00098,2026-11-12,CUST-0001,AL-GEL-02,Aloe Repair Gel,Skincare,Mobile App,West,1,449,0,449,449,Refunded,Shipped
+TXN-00099,2026-09-02,CUST-0014,VC-SER-01,Vitamin C Brightening Serum,Serums,Website,East,2,799,0,1598,1598,Pending,Delivered
+TXN-00100,2026-09-05,CUST-0027,SH-SPF-08,Daily Mineral SPF,Skincare,Marketplace,North,1,899,100,899,799,Paid,Processing
+TXN-00101,2026-09-08,CUST-0040,HM-MSK-07,Herbal Clay Mask,Masks,Mobile App,South,1,699,0,699,699,Paid,Shipped
+TXN-00102,2026-09-11,CUST-0053,OC-CLN-06,Oat Cream Cleanser,Cleansers,Website,West,2,599,0,1198,1198,Paid,Delivered
+TXN-00103,2026-09-14,CUST-0066,NT-OIL-05,Night Renewal Oil,Serums,Marketplace,East,1,1099,0,1099,1099,Refunded,Processing
+TXN-00104,2026-09-17,CUST-0079,TB-LIP-04,Tinted Lip Balm,Makeup,Mobile App,North,1,349,0,349,349,Pending,Shipped
+TXN-00105,2026-09-20,CUST-0001,RS-MST-03,Rosewater Mist,Skincare,Website,South,2,399,100,798,698,Paid,Delivered
+TXN-00106,2026-09-23,CUST-0014,AL-GEL-02,Aloe Repair Gel,Skincare,Marketplace,West,1,449,0,449,449,Paid,Processing
+TXN-00107,2026-09-26,CUST-0027,VC-SER-01,Vitamin C Brightening Serum,Serums,Mobile App,East,1,799,0,799,799,Paid,Shipped
+TXN-00108,2026-09-29,CUST-0040,SH-SPF-08,Daily Mineral SPF,Skincare,Website,North,2,899,0,1798,1798,Refunded,Delivered
+TXN-00109,2026-10-02,CUST-0053,HM-MSK-07,Herbal Clay Mask,Masks,Marketplace,South,1,699,0,699,699,Pending,Processing
+TXN-00110,2026-10-05,CUST-0066,OC-CLN-06,Oat Cream Cleanser,Cleansers,Mobile App,West,1,599,100,599,499,Paid,Shipped
+TXN-00111,2026-10-08,CUST-0079,NT-OIL-05,Night Renewal Oil,Serums,Website,East,2,1099,0,2198,2198,Paid,Delivered
+TXN-00112,2026-10-11,CUST-0001,TB-LIP-04,Tinted Lip Balm,Makeup,Marketplace,North,1,349,0,349,349,Paid,Processing
+TXN-00113,2026-10-14,CUST-0014,RS-MST-03,Rosewater Mist,Skincare,Mobile App,South,1,399,0,399,399,Refunded,Shipped
+TXN-00114,2026-10-17,CUST-0027,AL-GEL-02,Aloe Repair Gel,Skincare,Website,West,2,449,0,898,898,Pending,Delivered
+TXN-00115,2026-10-20,CUST-0040,VC-SER-01,Vitamin C Brightening Serum,Serums,Marketplace,East,1,799,100,799,699,Paid,Processing
+TXN-00116,2026-10-23,CUST-0053,SH-SPF-08,Daily Mineral SPF,Skincare,Mobile App,North,1,899,0,899,899,Paid,Shipped
+TXN-00117,2026-10-26,CUST-0066,HM-MSK-07,Herbal Clay Mask,Masks,Website,South,2,699,0,1398,1398,Paid,Delivered
+TXN-00118,2026-10-29,CUST-0079,OC-CLN-06,Oat Cream Cleanser,Cleansers,Marketplace,West,1,599,0,599,599,Refunded,Processing
+TXN-00119,2026-11-01,CUST-0001,NT-OIL-05,Night Renewal Oil,Serums,Mobile App,East,1,1099,0,1099,1099,Pending,Shipped
+TXN-00120,2026-11-04,CUST-0014,TB-LIP-04,Tinted Lip Balm,Makeup,Website,North,2,349,100,698,598,Paid,Delivered
+TXN-00121,2026-11-07,CUST-0027,RS-MST-03,Rosewater Mist,Skincare,Marketplace,South,1,399,0,399,399,Paid,Processing
+TXN-00122,2026-11-10,CUST-0040,AL-GEL-02,Aloe Repair Gel,Skincare,Mobile App,West,1,449,0,449,449,Paid,Shipped
+TXN-00123,2026-11-13,CUST-0053,VC-SER-01,Vitamin C Brightening Serum,Serums,Website,East,2,799,0,1598,1598,Refunded,Delivered
+TXN-00124,2026-09-03,CUST-0066,SH-SPF-08,Daily Mineral SPF,Skincare,Marketplace,North,1,899,0,899,899,Pending,Processing
+TXN-00125,2026-09-06,CUST-0079,HM-MSK-07,Herbal Clay Mask,Masks,Mobile App,South,1,699,100,699,599,Paid,Shipped
+TXN-00126,2026-09-09,CUST-0001,OC-CLN-06,Oat Cream Cleanser,Cleansers,Website,West,2,599,0,1198,1198,Paid,Delivered
+TXN-00127,2026-09-12,CUST-0014,NT-OIL-05,Night Renewal Oil,Serums,Marketplace,East,1,1099,0,1099,1099,Paid,Processing
+TXN-00128,2026-09-15,CUST-0027,TB-LIP-04,Tinted Lip Balm,Makeup,Mobile App,North,1,349,0,349,349,Refunded,Shipped
+TXN-00129,2026-09-18,CUST-0040,RS-MST-03,Rosewater Mist,Skincare,Website,South,2,399,0,798,798,Pending,Delivered
+TXN-00130,2026-09-21,CUST-0053,AL-GEL-02,Aloe Repair Gel,Skincare,Marketplace,West,1,449,100,449,349,Paid,Processing
+TXN-00131,2026-09-24,CUST-0066,VC-SER-01,Vitamin C Brightening Serum,Serums,Mobile App,East,1,799,0,799,799,Paid,Shipped
+TXN-00132,2026-09-27,CUST-0079,SH-SPF-08,Daily Mineral SPF,Skincare,Website,North,2,899,0,1798,1798,Paid,Delivered
+TXN-00133,2026-09-30,CUST-0001,HM-MSK-07,Herbal Clay Mask,Masks,Marketplace,South,1,699,0,699,699,Refunded,Processing
+TXN-00134,2026-10-03,CUST-0014,OC-CLN-06,Oat Cream Cleanser,Cleansers,Mobile App,West,1,599,0,599,599,Pending,Shipped
+TXN-00135,2026-10-06,CUST-0027,NT-OIL-05,Night Renewal Oil,Serums,Website,East,2,1099,100,2198,2098,Paid,Delivered
+TXN-00136,2026-10-09,CUST-0040,TB-LIP-04,Tinted Lip Balm,Makeup,Marketplace,North,1,349,0,349,349,Paid,Processing
+TXN-00137,2026-10-12,CUST-0053,RS-MST-03,Rosewater Mist,Skincare,Mobile App,South,1,399,0,399,399,Paid,Shipped
+TXN-00138,2026-10-15,CUST-0066,AL-GEL-02,Aloe Repair Gel,Skincare,Website,West,2,449,0,898,898,Refunded,Delivered
+TXN-00139,2026-10-18,CUST-0079,VC-SER-01,Vitamin C Brightening Serum,Serums,Marketplace,East,1,799,0,799,799,Pending,Processing
+TXN-00140,2026-10-21,CUST-0001,SH-SPF-08,Daily Mineral SPF,Skincare,Mobile App,North,1,899,100,899,799,Paid,Shipped
+TXN-00141,2026-10-24,CUST-0014,HM-MSK-07,Herbal Clay Mask,Masks,Website,South,2,699,0,1398,1398,Paid,Delivered
+TXN-00142,2026-10-27,CUST-0027,OC-CLN-06,Oat Cream Cleanser,Cleansers,Marketplace,West,1,599,0,599,599,Paid,Processing
+TXN-00143,2026-10-30,CUST-0040,NT-OIL-05,Night Renewal Oil,Serums,Mobile App,East,1,1099,0,1099,1099,Refunded,Shipped
+TXN-00144,2026-11-02,CUST-0053,TB-LIP-04,Tinted Lip Balm,Makeup,Website,North,2,349,0,698,698,Pending,Delivered
