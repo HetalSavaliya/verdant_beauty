@@ -1,0 +1,20 @@
+GROWTH ECOMMERCE STORE GLOBAL | REACT DASHBOARD
+Job ID: 1S8e1o2e284Ah70FxeUY
+Objective: Build one responsive organic cosmetics dashboard with reusable KPI cards and a transaction table.
+Budget: INR 779 | Deadline: 21 November 2026 | Duration: 1 business day.
+INPUT FILES:
+- INPUT_FILES/DESIGN_REFERENCES/desktop_1440.png and mobile_390.png (SVG counterparts included)
+- INPUT_FILES/BRAND_ASSETS/verdant_logo.svg and .png
+- INPUT_FILES/DATA/transactions_144.csv and .json, metric_definitions.csv, filter_reference.json
+- INPUT_FILES/SPECIFICATIONS/BRAND_AND_CONTENT.txt and TECHNICAL_REQUIREMENTS.txt
+- INPUT_FILES/REACT_STARTER/ (runnable unfinished React/Vite shell)
+- INPUT_FILES/QA/TEST_CASES.csv
+STEPS:
+1. Review desktop/mobile visual designs, brand copy, KPI formulas and the 144 source transactions.
+2. Copy the starter into your repository. Run npm install and npm run dev.
+3. Finish reusable MetricCard and TransactionTable React components using the provided transaction objects.
+4. Implement CSS Grid/Flexbox layout and CSS-only responsive breakpoints. Add data rendering, a meaningful empty state and accessible controls.
+5. Test at mobile/tablet/desktop, run npm run build, complete the QA test matrix with actual results.
+6. Publish the code to GitHub, deploy an HTTPS preview, and update README with setup and components.
+7. Submit the repository URL, live preview URL and README to the authorized reviewer.
+ACCEPTANCE: functional dashboard, correct KPI math, no runtime warnings, React functional components and hooks, responsive layout, modular CSS and an executable production build. Do not claim unperformed browser tests.
