@@ -1,0 +1,77 @@
+================================================================================
+SKILLNEXA SUBMISSION GUIDE — GROWTH ECOMMERCE STORE GLOBAL (VERDANT BEAUTY)
+================================================================================
+Job ID: 1S8e1o2e284Ah70FxeUY
+Assignment Ref: 1t5iv80pU5QGbJrtXf2i76BPu302_1S8e1o2e284Ah70FxeUY
+Client: Growth Ecommerce Store Global
+Portal Link: https://skillnexahub.com/submit-work/1t5iv80pU5QGbJrtXf2i76BPu302_1S8e1o2e284Ah70FxeUY
+
+--------------------------------------------------------------------------------
+STEP 1: SUBMISSION ME KYA KYA LINKS DENI HAIN?
+--------------------------------------------------------------------------------
+SkillNexa portal par jab aap submission page open karenge:
+1. Live Deployment URL (Netlify):
+   https://polite-mermaid-0f58e3.netlify.app
+
+2. GitHub Repository URL:
+   Agar aapne GitHub par push kiya hai, to uska link de:
+   (Example: https://github.com/<your-username>/verdant-commerce-dashboard)
+
+3. Google Drive Link (ZIP file ke liye):
+   Jo ZIP file humne create ki hai (Verdant_Beauty_Dashboard_Deliverables.zip),
+   use Google Drive par upload kare aur sharing ko:
+   "Anyone with the link can view" par set kare.
+
+--------------------------------------------------------------------------------
+STEP 2: ZIP FILE ME KAUN KAUN SE FOLDERS AUR FILES HAIN?
+--------------------------------------------------------------------------------
+ZIP file ka naam: Verdant_Beauty_Dashboard_Deliverables.zip
+(Ye file already project folder me create kar di gayi hai!)
+
+ZIP file ke andar sirf jaruri files aur folders hain (bina heavy node_modules ke):
+
+[FOLDERS]:
+- src/                    -> React source code
+    - components/         -> MetricCard.jsx, TransactionTable.jsx, Sidebar.jsx, FilterBar.jsx, BannerCards.jsx
+    - styles/             -> base.css (pure CSS media queries, responsive styles, colors)
+    - data/               -> transactions_144.json, filter_reference.json
+    - assets/             -> verdant_logo.svg
+    - App.jsx             -> main app logic & KPI formulas
+    - main.jsx            -> React entry point
+- public/                 -> Static logo & favicon assets
+- QA/                     -> TEST_CASES.csv (completed test results with evidence)
+- dist/                   -> Production ready build files
+- INPUT_FILES/            -> Client's original reference data and design SVGs
+
+[ROOT FILES]:
+- package.json            -> Dependencies and scripts
+- package-lock.json       -> Dependency lockfile
+- vite.config.js          -> Vite build configuration
+- index.html              -> Main HTML template
+- README.md               -> Full setup and component documentation
+- COMPLETION_NOTE.txt     -> Client summary note with live links
+- SUBMISSION_CHECKLIST.txt-> Completed checklist
+- START_HERE.txt          -> Original assignment task sheet
+- SUBMISSION_STEPS_GUIDE.txt -> This step-by-step guide
+
+*NOTE: `node_modules` aur `.git` ko ZIP me intentionally nahi dala gaya hai kyonki
+vo bahut heavy hote hain aur standard deliverable guidelines me unhe exclude kiya jata hai.
+Reviewer `npm install` aur `npm run dev` chala kar ise easily run kar sakta hai.
+
+--------------------------------------------------------------------------------
+STEP 3: SKILLNEXA PORTAL PAR SUBMIT KAISE KARE?
+--------------------------------------------------------------------------------
+1. Is link par click kare:
+   https://skillnexahub.com/submit-work/1t5iv80pU5QGbJrtXf2i76BPu302_1S8e1o2e284Ah70FxeUY
+
+2. Deliverable URL field me Live URL dale:
+   https://polite-mermaid-0f58e3.netlify.app
+
+3. Code / Repository URL me GitHub link ya Google Drive link dale.
+
+4. Notes / Comments field me COMPLETION_NOTE.txt ka text copy karke paste kar sakte hain.
+
+5. "Submit Deliverable" par click kare.
+
+Done! Aapka submission 100% complete ho jayega.
+================================================================================

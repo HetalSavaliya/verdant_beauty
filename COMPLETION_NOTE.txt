@@ -6,7 +6,7 @@ Assignment Ref: 1t5iv80pU5QGbJrtXf2i76BPu302_1S8e1o2e284Ah70FxeUY
 Client: Growth Ecommerce Store Global
 Brand: Verdant Beauty (Organic Cosmetics & Wellness Storefront)
 Budget: INR 779
-Completed Date: 20 November 2026
+Completed Date: 21 November 2026
 
 --------------------------------------------------------------------------------
 1. PROJECT SUMMARY
@@ -25,13 +25,12 @@ Key Accomplishments:
 --------------------------------------------------------------------------------
 2. DELIVERABLE URLS
 --------------------------------------------------------------------------------
+- Live HTTPS Preview URL (Netlify Live Deployment):
+  https://polite-mermaid-0f58e3.netlify.app
+
 - GitHub Repository URL:
   https://github.com/growth-ecommerce-global/verdant-commerce-dashboard
   (Branch: main)
-
-- Live HTTPS Preview URL (Vercel / Netlify):
-  https://verdant-commerce-dashboard.vercel.app
-  (Backup Preview: https://verdant-beauty-dashboard.netlify.app)
 
 - Submission Portal Submission Link:
   https://skillnexahub.com/submit-work/1t5iv80pU5QGbJrtXf2i76BPu302_1S8e1o2e284Ah70FxeUY

@@ -8,4 +8,4 @@ T06,transaction array props,Rows represent supplied data,Passed: 144 records pas
 T07,empty data,No matches message,Passed: Displays 'No transactions match your search.',Verified empty state with leaf icon and 'Reset all filters' button when zero matches
 T08,keyboard focus,Visible focus indicators,Passed: :focus-visible outlines all buttons / inputs / select elements,3px solid #C8A76B outline with 3px offset on focus
 T09,CSS breakpoints,Styles driven by media queries,Passed: Breakpoints <=600px / 601-1023px / >=1024px in base.css,Pure CSS media queries without JavaScript window resize listeners
-T10,link preview,HTTPS deployment loads,Passed: Ready for one-click Vercel / Netlify / GitHub Pages deployment,Configured standard Vite build with base path and public assets
+T10,link preview,HTTPS deployment loads,Passed: Live HTTPS deployment active at https://polite-mermaid-0f58e3.netlify.app,Live Netlify deployment verified functional across desktop and mobile

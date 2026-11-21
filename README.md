@@ -4,6 +4,7 @@
 **Assignment Ref:** `1t5iv80pU5QGbJrtXf2i76BPu302_1S8e1o2e284Ah70FxeUY`  
 **Client:** Growth Ecommerce Store Global  
 **Brand:** Verdant Beauty (Organic Cosmetics & Wellness Storefront)  
+**Live Site URL:** [https://polite-mermaid-0f58e3.netlify.app](https://polite-mermaid-0f58e3.netlify.app)  
 
 ---
 
@@ -22,6 +23,11 @@ A responsive, high-performance admin dashboard interface for **Verdant Beauty**,
 - **Zero Horizontal Scroll on Mobile:** Mobile view uses custom stacked transaction cards designed specifically for narrow viewports (390px iPhone reference).
 - **Keyboard & Screen Reader Accessible:** Semantic HTML5, visible focus indicators (`:focus-visible` with 3px `#C8A76B` outline), and ARIA attributes.
 - **Brand-Aligned Organic Aesthetic:** Deep Forest (`#244E3B`), Sage (`#DCE9D7`), Warm Paper (`#F8F7F0`), Ink (`#203329`), and Muted Gold (`#C8A76B`).
+
+---
+
+## 🌐 Live Deployment
+- **Production URL:** [https://polite-mermaid-0f58e3.netlify.app](https://polite-mermaid-0f58e3.netlify.app)
 
 ---
 
@@ -159,21 +165,7 @@ All responsive adjustments are governed solely by CSS media queries in `src/styl
 | **T07** | Empty data state | Display no matches message | Displays `"No transactions match your search."` + reset CTA | ✅ PASS |
 | **T08** | Keyboard navigation| Accessible focus indicators | `:focus-visible` with 3px solid `#C8A76B` on all controls | ✅ PASS |
 | **T09** | CSS Breakpoints | Driven by CSS media queries | Pure CSS media queries; no window resize event listeners | ✅ PASS |
-| **T10** | Live Deployment | Standard build output | Zero-config deployment ready for Vercel, Netlify, GitHub Pages | ✅ PASS |
-
----
-
-## 🌐 Deployment Instructions
-
-### Deploying to Vercel
-1. Install Vercel CLI: `npm i -g vercel`
-2. Run `vercel` in the project root.
-3. Select defaults (Framework: Vite, Build Command: `npm run build`, Output Directory: `dist`).
-
-### Deploying to Netlify
-1. Install Netlify CLI: `npm i -g netlify-cli`
-2. Run `netlify deploy --prod`
-3. Set publish directory to `dist`.
+| **T10** | Live Deployment | HTTPS deployment active | Verified live at https://polite-mermaid-0f58e3.netlify.app | ✅ PASS |
 
 ---
 
