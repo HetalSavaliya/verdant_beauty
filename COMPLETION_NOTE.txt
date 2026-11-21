@@ -29,7 +29,7 @@ Key Accomplishments:
   https://polite-mermaid-0f58e3.netlify.app
 
 - GitHub Repository URL:
-  https://github.com/growth-ecommerce-global/verdant-commerce-dashboard
+  https://github.com/HetalSavaliya/verdant_beauty
   (Branch: main)
 
 - Submission Portal Submission Link:

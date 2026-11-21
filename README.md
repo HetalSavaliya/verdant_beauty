@@ -26,8 +26,9 @@ A responsive, high-performance admin dashboard interface for **Verdant Beauty**,
 
 ---
 
-## 🌐 Live Deployment
+## 🌐 Live Deployment & Code Repository
 - **Production URL:** [https://polite-mermaid-0f58e3.netlify.app](https://polite-mermaid-0f58e3.netlify.app)
+- **GitHub Repository:** [https://github.com/HetalSavaliya/verdant_beauty](https://github.com/HetalSavaliya/verdant_beauty)
 
 ---
 

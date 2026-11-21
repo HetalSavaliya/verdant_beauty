@@ -14,8 +14,7 @@ SkillNexa portal par jab aap submission page open karenge:
    https://polite-mermaid-0f58e3.netlify.app
 
 2. GitHub Repository URL:
-   Agar aapne GitHub par push kiya hai, to uska link de:
-   (Example: https://github.com/<your-username>/verdant-commerce-dashboard)
+   https://github.com/HetalSavaliya/verdant_beauty
 
 3. Google Drive Link (ZIP file ke liye):
    Jo ZIP file humne create ki hai (Verdant_Beauty_Dashboard_Deliverables.zip),
